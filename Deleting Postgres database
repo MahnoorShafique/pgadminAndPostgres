@@ -1,0 +1,8 @@
+## Deleting postgres database all tables and all data within those table.
+
+1. open pgadmin
+2. click database name > Query Tool > in query tool paste:
+DROP SCHEMA PUBLIC CASCADE
+
+above command will delete everything including schema, now recreate schema:
+create schema public
