@@ -1,0 +1,27 @@
+sudo apt install python3-virtualenv
+
+Setup Python 3 Environment on Ubuntu 20.04
+
+sudo apt install python3-venv
+creating virtual environment (myapplication)
+python3 -m venv myapplication
+source myapplication/bin/activate
+
+deactivate
+
+for installing packages:
+python3 -m pip install requests
+
+
+https://www.django-rest-framework.org/tutorial/1-serialization/
+
+
+https://github.com/juliatan/django-rest-api
+
+
+creating virtual env in a project:
+python -m venv env
+1234 --->pgadmin
+extra---discarded[postgres---12345(password)['admin@123']mahnoor 1234
+admin]
+postgres(admin@123)
