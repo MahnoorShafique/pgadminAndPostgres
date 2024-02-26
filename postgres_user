@@ -1,1 +1,2 @@
+#granting permission to user to perform seletced operations on database.
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO staging_ecs;
