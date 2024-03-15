@@ -1,2 +1,17 @@
+#creating a new user for postgres using pgadmin
+#1 create user
+CREATE USER <new_user> WITH PASSWORD '<password>';
+# 2 grant a user the ability to access objects within a schema without granting them specific privileges on those objects,like user can view tables but can't create new.
+GRANT USAGE ON SCHEMA public TO <new_user>;
+# 3 grant user ability to create new objects (table) in public schema
+GRANT CREATE ON SCHEMA public TO <new_user>;
+# 4 grant user CRUD permission on tables:
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO <new_user>;
+above operations can only be performed by master/root user.
+
+
+
+
+
 #granting permission to user to perform seletced operations on database.
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO staging_ecs;
