@@ -13,5 +13,11 @@ above operations can only be performed by master/root user.
 
 
 
-#granting permission to user to perform seletced operations on database.
+#granting permission to user to perform seletced operations on database on exsting tables
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO staging_ecs;
+
+# grant permissions for fututre tables:
+#-- Grant default privileges for future tables
+ALTER DEFAULT PRIVILEGES IN SCHEMA schema_name
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO <user_name>;
+By default, future tables created in the specified schema will inherit the granted permissions.
