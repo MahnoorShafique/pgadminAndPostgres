@@ -25,3 +25,6 @@ By default, future tables created in the specified schema will inherit the grant
 
 #=-- permission to create extensions:
 GRANT CREATE ON DATABASE tbproddb TO <username>;
+sequence permission
+
+GRANT USAGE, SELECT, UPDATE ON SEQUENCE student_learning_checkpoint_grades_id_seq TO <username>;
