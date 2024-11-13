@@ -21,3 +21,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO staging_e
 ALTER DEFAULT PRIVILEGES IN SCHEMA schema_name
 GRANT SELECT, INSERT, UPDATE, DELETE ON all TABLES IN SCHEMA public TO <user_name>;
 By default, future tables created in the specified schema will inherit the granted permissions.
+
+
+#=-- permission to create extensions:
+GRANT CREATE ON DATABASE tbproddb TO <username>;
