@@ -1,0 +1,13 @@
+## create new usr
+CREATE USER <username> WITH PASSWORD 'your_password_here';
+
+## grant access on all tables and sequences( for auto incrementing)
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO <username>;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO <username>;
+
+## grant access on all new tables and sequences
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO <username>;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT USAGE, SELECT ON SEQUENCES TO <username>;
