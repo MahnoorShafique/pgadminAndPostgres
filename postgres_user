@@ -11,7 +11,7 @@ above operations can only be performed by master/root user.
 
 
 
-
+GRANT USAGE ON SCHEMA schema_name TO username;
 
 #granting permission to user to perform seletced operations on database on exsting tables
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO staging_ecs;
